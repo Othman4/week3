@@ -1,0 +1,27 @@
+#!/bin/bash
+echo "my third script"
+echo "Here we go"
+pwd
+echo "create my seconed file using cat command"
+cat > file1
+echo "list commands and files"
+ls
+echo "lets check the file names and permissions too"
+ls -al
+echo "im going to create another file"
+cat > file2
+echo "Lets combine these two files togather"
+cat file1: file2 > newfile
+echo "lets check whats is newfile"
+cat newfile
+echo "redirect the file"
+echo "hello world" > dev/null
+echo "change the director"
+cd /dev
+echo "list the directory"
+ls -l
+echo "delete a file"
+rm file1
+echo "move a file"
+mv newfile /Desktop
+
